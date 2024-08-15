@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* This makes the input curved */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: teal; /* Changes border color when focused */
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px; /* This makes the button curved */
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: darkcyan; /* Slightly darken the button on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('your-image.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px; /* Curved button */
+}
+
+#results {
+    margin-top: 20px;
+}
+
+/* About Section */
+
+
+.about {
+    padding: 50px 20px;
+    background-image: url('C:/Users/bathu/OneDrive/Desktop/EXAPM;ES/about_pic.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: white; /* Ensures text color is readable on the background */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about h1 {
+    font-size: 48px; /* Increase the font size */
+    font-weight: bold; /* Optionally, make the font bolder */
+    color: white; /* Ensure the color contrasts well with the background */
+    margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+
+.our-motives-title {
+    font-size: 28px; /* You can adjust this size as needed */
+    color: #f08a5d; /* Example color, adjust as needed */
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold; /* Make the text bold */
+}
+
+.mission-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mission-card {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Blurs the background behind the card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;  /* Ensures that each card takes up the full width within the grid cell */
+    box-sizing: border-box;
+    color: #fff; /* White text to stand out against the blurry background */
+}
+
+.mission-card h3 {
+    font-size: 24px;
+    color: #f08a5d; /* Example color, adjust as needed */
+    margin-bottom: 10px;
+}
+
+.mission-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.mission-cards {
+    display: grid;  /* Use CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr);  /* Create 3 equal columns */
+    grid-gap: 20px;  /* Gap between grid items */
+    justify-items: center;  /* Center the items horizontally */
+    padding: 20px;
+}
+
+.mission-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;  /* Ensures that each card takes up the full width within the grid cell */
+    box-sizing: border-box;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form label,
+.contact form input,
+.contact form textarea {
+    margin-bottom: 10px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px; /* Curved button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+.hero {
+    background-image: url('C:/Users/bathu/OneDrive/Desktop/EXAPM;ES/pic.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: flex-start; /* Aligns content to the top */
+    text-align: left; /* Ensures text is left-aligned */
+    padding: 40px 20px; /* Adds padding for spacing */
+    color: white;
+    font-family: 'Georgia', serif; /* Fancy font for the text */
+}
+
+.hero-content {
+    max-width: 400px; /* Sets a max width for the text block */
+    line-height: 1.4; /* Adjusts the line height for better readability */
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-family: 'Georgia', serif; /* Fancy font for the heading */
+    margin: 0;
+    padding-bottom: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Adds a stronger shadow for better contrast */
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-family: 'Palatino', serif; /* Fancy font for the paragraph */
+    margin: 0;
+    padding-bottom: 25px; /* Adds more space below the paragraph */
+}
+
+.hero-content button {
+    padding: 12px 30px; /* Increases the padding for a more substantial button */
+    font-size: 18px; /* Slightly larger font for better visibility */
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace; /* Fancy font for the button */
+    border-radius: 5px;
+    text-transform: uppercase; /* Makes the button text uppercase */
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: darkcyan; /* Darkens the button color on hover */
+}
+
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-sidebar {
+    position: fixed; /* Keeps the icons fixed as you scroll */
+    top: 50%; /* Positions the icons vertically centered */
+    right: 20px; /* Positions the icons 20px from the right edge */
+    transform: translateY(-50%); /* Centers the sidebar vertically */
+    display: flex;
+    flex-direction: column; /* Stacks icons vertically */
+    align-items: center;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.social-media-sidebar a {
+    margin-bottom: 15px; /* Adds spacing between the icons */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
