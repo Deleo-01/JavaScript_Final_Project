@@ -6,15 +6,14 @@
         "province": "Alberta",
         "category": "Nature",
         "description": "A stunning national park located in the Canadian Rockies known for its beautiful landscapes and diverse wildlife.",
-        "image_1": "images/banff_1.jpg",
-        "image_2": "images/banff_2.jpg"
+        "image_1": "images/banff_1.jpg"
       },
       {
         "id": 2,
         "name": "Niagara Falls",
         "province": "Ontario",
         "category": "Waterfall",
-        "description": "A breathtaking waterfall located on the border of Ontario, Canada, and New York, USA.",
+        "description": "A breathtaking waterfall located on the border of Toronto, Ontario, Canada, and New York, USA.",
         "image_1": "images/niagara_1.webp"
       },
       {
@@ -23,8 +22,7 @@
         "province": "Ontario",
         "category": "Landmark",
         "description": "An iconic tower in downtown Toronto, offering a panoramic view of the city and surrounding area.",
-        "image_1": "images/cn_tower_1.jpg",
-        "image_2": "images/cn_tower_2.jpg"
+        "image_1": "images/cn_tower_1.jpg"
       },
       {
         "id": 4,
@@ -32,8 +30,7 @@
         "province": "Prince Edward Island",
         "category": "Beach",
         "description": "A beautiful island known for its beaches, rolling hills, and red sandstone cliffs.",
-        "image_1": "images/pei_1.jpg",
-        "image_2": "images/pei_2.jpg"
+        "image_1": "images/pei_1.jpg"
       },
       {
         "id": 5,
@@ -41,8 +38,7 @@
         "province": "Quebec",
         "category": "Waterfall",
         "description": "A large waterfall located near Quebec City, offering stunning views and scenic trails.",
-        "image_1": "images/montmorency_1.jpg",
-        "image_2": "images/montmorency_2.jpg"
+        "image_1": "images/montmorency_1.jpg"
       }
     ]
   }
