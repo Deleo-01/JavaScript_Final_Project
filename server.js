@@ -3,16 +3,16 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-/*Files which are static to the server*/
+// Serve static files from 'public' and 'data' directories
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'data')));  // Ensure data folder is served
 
-/*The address for the index */
+// Route for index.html
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-/*For starting the server*/
-
+// Start server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
