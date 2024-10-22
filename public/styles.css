@@ -1,383 +1,382 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0;  /* Remove default margin for the body */
+    font-family: Arial, sans-serif;  /* Set a clean, modern font */
 }
 
 nav {
-    background-color: #333;
-    padding: 20px 0;
+    background-color: #333;  /* Dark background for the navigation bar */
+    padding: 20px 0;  /* Add padding above and below the navigation links */
 }
 
 .nav-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex;  /* Use flexbox to arrange items in a row */
+    align-items: center;  /* Center items vertically */
+    justify-content: space-between;  /* Distribute space between items */
+    max-width: 1200px;  /* Limit the width of the navigation bar content */
+    margin: 0 auto;  /* Center the navigation bar horizontally */
+    padding: 0 20px;  /* Add horizontal padding */
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
+    display: flex;  /* Display the logo and text side by side */
+    align-items: center;  /* Vertically center the logo and text */
 }
 
 .logo-image {
-    height: 40px; /* Smaller size for the logo */
-    margin-right: 10px;
+    height: 40px;  /* Set the size of the logo image */
+    margin-right: 10px;  /* Add some space between the logo image and text */
 }
 
 .logo {
-    color: white;
-    font-size: 24px;
+    color: white;  /* White text for the logo */
+    font-size: 24px;  /* Increase font size to make the logo more prominent */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Centers the links */
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
+    list-style: none;  /* Remove bullet points from the list */
+    display: flex;  /* Use flexbox to arrange the list items in a row */
+    justify-content: center;  /* Center the list items */
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    flex-grow: 1;  /* Allow the list to grow to fill available space */
 }
 
 nav ul li {
-    margin-left: 40px; /* Adds space between links */
+    margin-left: 40px;  /* Add space between each navigation link */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    color: white;  /* Set the link text color to white */
+    text-decoration: none;  /* Remove underline from the links */
+    font-size: 18px;  /* Set a medium font size for the navigation links */
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Aligns the search bar to the right */
+    display: flex;  /* Use flexbox to align the search bar elements */
+    align-items: center;  /* Vertically center the search bar elements */
+    margin-left: auto;  /* Push the search bar to the right */
 }
 
 .search-bar input[type="text"] {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    outline: none;
-    transition: border-color 0.3s;
-    width: 250px; /* Set a fixed width for consistency */
+    padding: 8px 12px;  /* Add padding inside the text input */
+    font-size: 16px;  /* Set a readable font size */
+    border: 1px solid #ccc;  /* Light grey border for the input */
+    border-radius: 20px;  /* Round the corners of the input */
+    outline: none;  /* Remove the default input focus outline */
+    transition: border-color 0.3s;  /* Smooth transition for the border color when focused */
+    width: 250px;  /* Set a fixed width for consistency */
 }
 
 .search-bar input[type="text"]:focus {
-    border-color: teal;
+    border-color: teal;  /* Change the border color when the input is focused */
 }
 
 .search-bar button {
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: teal;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin-left: 10px;
-    border-radius: 20px;
-    outline: none;
-    transition: background-color 0.3s;
+    padding: 8px 16px;  /* Add padding inside the button */
+    font-size: 16px;  /* Set a readable font size for the button text */
+    background-color: teal;  /* Set the background color of the button */
+    border: none;  /* Remove the default border */
+    color: white;  /* Set the button text color to white */
+    cursor: pointer;  /* Change the cursor to a pointer when hovered */
+    margin-left: 10px;  /* Add space between the input and the button */
+    border-radius: 20px;  /* Round the corners of the button */
+    outline: none;  /* Remove the default button focus outline */
+    transition: background-color 0.3s;  /* Smooth transition for the background color when hovered */
 }
 
 .search-bar button:hover {
-    background-color: darkcyan;
+    background-color: darkcyan;  /* Darken the button color on hover */
 }
 
 /* Hero Section */
 .hero {
-    background-image: url("images/pic.png");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    padding-left: 40px;
+    background-image: url("images/pic.png");  /* Set a background image for the hero section */
+    height: 100vh;  /* Make the hero section fill the entire viewport height */
+    background-size: cover;  /* Ensure the background image covers the entire section */
+    background-position: center;  /* Center the background image */
+    color: white;  /* Set the text color to white */
+    display: flex;  /* Use flexbox to align content */
+    justify-content: flex-start;  /* Align content to the left */
+    align-items: center;  /* Vertically center the content */
+    text-align: left;  /* Align text to the left */
+    padding-left: 40px;  /* Add space on the left for better text positioning */
 }
 
 .hero-content {
-    max-width: 400px;
-    line-height: 1.4;
+    max-width: 400px;  /* Limit the width of the hero content for better readability */
+    line-height: 1.4;  /* Set line height for comfortable text spacing */
 }
 
 .hero-content h1 {
-    font-size: 50px;
-    margin: 0;
-    padding-bottom: 15px;
-    color: #f8f9fc;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    font-size: 50px;  /* Large font size for the main hero heading */
+    margin: 0;  /* Remove default margin for h1 */
+    padding-bottom: 15px;  /* Add space below the heading */
+    color: #f8f9fc;  /* Light color for the text */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);  /* Add shadow to the text for better contrast */
 }
 
 .hero-content p {
-    font-size: 20px;
-    margin: 0;
-    padding-bottom: 25px;
-    color: #f6f9fc;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 20px;  /* Medium font size for paragraph text */
+    margin: 0;  /* Remove default margin for paragraphs */
+    padding-bottom: 25px;  /* Add space below the paragraph */
+    color: #f6f9fc;  /* Light color for the paragraph text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Add shadow to paragraph text for better readability */
 }
 
 .hero-content button {
-    padding: 12px 30px;
-    font-size: 18px;
-    background-color: teal;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    padding: 12px 30px;  /* Add padding inside the button for better appearance */
+    font-size: 18px;  /* Set font size for button text */
+    background-color: teal;  /* Set the background color of the button */
+    border: none;  /* Remove default border */
+    color: white;  /* Set the text color to white */
+    cursor: pointer;  /* Change cursor to pointer to indicate button is clickable */
+    border-radius: 20px;  /* Make the corners of the button rounded */
+    text-transform: uppercase;  /* Convert button text to uppercase */
+    transition: background-color 0.3s ease;  /* Add smooth transition for background color change */
 }
 
 .hero-content button:hover {
-    background-color: darkcyan;
+    background-color: darkcyan;  /* Change the button color on hover */
 }
 
 /* About Section */
 .about {
-    padding: 50px 20px;
-    background-image: url("images/about_pic.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: left;
-    position: relative;
-    z-index: 1;
+    padding: 50px 20px;  /* Add padding around the content */
+    background-image: url("images/about_pic.png");  /* Set background image for the About section */
+    background-size: cover;  /* Ensure the background image covers the entire section */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent the background image from repeating */
+    color: white;  /* Set the text color to white */
+    text-align: left;  /* Align the text to the left */
+    position: relative;  /* Position element relative to its normal position */
+    z-index: 1;  /* Set the stacking order to ensure the content is above the background */
 }
 
 .about h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 48px;  /* Large font size for the main heading */
+    font-weight: bold;  /* Make the text bold */
+    margin-bottom: 20px;  /* Add space below the heading */
+    text-align: left;  /* Align the heading text to the left */
 }
 
 .about-card {
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin-left: 0;
-    text-align: left;
+    background-color: rgba(255, 255, 255, 0.3);  /* Set background color with transparency */
+    backdrop-filter: blur(10px);  /* Apply blur effect to the background */
+    padding: 20px;  /* Add padding inside the card */
+    border-radius: 8px;  /* Round the corners of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow to give a slight 3D effect */
+    max-width: 800px;  /* Limit the width of the card */
+    margin-left: 0;  /* Align the card to the left */
+    text-align: left;  /* Align the text inside the card to the left */
 }
 
 .about-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: disc;  /* Use bullets for the list items */
+    padding-left: 20px;  /* Add padding to the left to align the list with the content */
 }
 
 .about-card li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    font-size: 18px;  /* Set the font size for list items */
+    margin-bottom: 10px;  /* Add space between each list item */
+    line-height: 1.6;  /* Increase the line height for better readability */
 }
 
 /* Social Media Sidebar */
 .social-media-sidebar {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1000;
+    position: fixed;  /* Fix the sidebar to the viewport */
+    top: 50%;  /* Position the sidebar halfway down the page */
+    right: 20px;  /* Align the sidebar 20px from the right edge */
+    transform: translateY(-50%);  /* Center the sidebar vertically */
+    display: flex;  /* Use flexbox to arrange icons in a column */
+    flex-direction: column;  /* Arrange the icons vertically */
+    align-items: center;  /* Center the icons horizontally */
+    z-index: 1000;  /* Ensure the sidebar appears on top of other elements */
 }
 
 .social-media-sidebar a {
-    margin-bottom: 15px;
+    margin-bottom: 15px;  /* Add space between each social media icon */
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+    width: 40px;  /* Set the size of the icons */
+    height: 40px;  /* Set the height of the icons */
+    transition: transform 0.3s ease;  /* Add smooth transition for the scaling effect on hover */
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  /* Slightly enlarge the icon when hovered */
 }
 
 /* Contact Section */
 .contact {
-    padding: 50px;
-    background-color: #f9f9f9;
+    padding: 50px;  /* Add padding around the contact section */
+    background-color: #f9f9f9;  /* Light grey background for the contact section */
 }
 
 .contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    display: flex;  /* Use flexbox to arrange form elements */
+    flex-direction: column;  /* Arrange the form elements in a vertical column */
+    max-width: 400px;  /* Limit the width of the form */
+    margin: 0 auto;  /* Center the form horizontally */
 }
 
 .contact form label,
 .contact form input,
 .contact form textarea {
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* Add space between form elements */
 }
 
 .contact form button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: teal;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
+    padding: 10px 20px;  /* Add padding inside the button */
+    font-size: 18px;  /* Set the font size for the button */
+    background-color: teal;  /* Set the background color of the button */
+    border: none;  /* Remove the default border */
+    color: white;  /* Set the text color to white */
+    cursor: pointer;  /* Change the cursor to pointer on hover */
+    border-radius: 20px;  /* Round the corners of the button */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-content {
-        flex-direction: column;
+        flex-direction: column;  /* Stack the navigation content vertically on smaller screens */
     }
 
     nav ul {
-        justify-content: center;
+        justify-content: center;  /* Center the navigation links on smaller screens */
     }
 
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 36px;  /* Reduce font size for the main heading on smaller screens */
     }
-
+    
     .hero-content p {
-        font-size: 16px;
+        font-size: 16px;  /* Reduce paragraph font size for readability on smaller screens */
     }
-
+    
     .search-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+        display: flex;  /* Use flexbox to arrange elements */
+        flex-direction: column;  /* Stack the search input and button vertically */
+        align-items: center;  /* Center the search bar elements */
+        margin-top: 10px;  /* Add margin above the search bar */
     }
-
+    
     .about {
-        padding: 20px;
+        padding: 20px;  /* Reduce padding for smaller screens */
     }
-
+    
     .about-card {
-        max-width: 100%;
-        margin: 0;
+        max-width: 100%;  /* Make the card full-width on smaller screens */
+        margin: 0;  /* Remove margin to adjust for smaller screen sizes */
     }
-
+    
     .social-media-sidebar {
-        top: auto;
-        right: 10px;
-        bottom: 10px;
-        transform: none;
-        flex-direction: row;
+        top: auto;  /* Remove fixed top position for better layout on smaller screens */
+        right: 10px;  /* Adjust position from the right */
+        bottom: 10px;  /* Position sidebar at the bottom of the screen */
+        transform: none;  /* Remove transform effect for a simpler layout */
+        flex-direction: row;  /* Display icons in a horizontal row */
     }
-
+    
     .social-media-sidebar a {
-        margin-bottom: 0;
-        margin-right: 10px;
+        margin-bottom: 0;  /* Remove vertical spacing between icons */
+        margin-right: 10px;  /* Add horizontal spacing between icons */
     }
-}
-
-
-.address-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    text-align: center;
-}
-
-.address-section h2 {
-    font-size: 36px;
-    color: #002366; /* Royal Blue for consistency */
-    margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.contact h2 {
-    font-size: 36px; /* Increase the font size */
-    color: #002366; /* Royal Blue color for consistency */
-    margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for a more polished look */
-}
-
-
-.locations {
-    display: flex;
-    justify-content: space-around; /* Distribute locations evenly */
-    flex-wrap: wrap;
-}
-
-.location {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: 10px;
-    text-align: left;
-}
-
-.location h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.location p {
-    font-size: 16px;
-    color: #666;
-}
-
-.search-section {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #f1f1f1; /* Light background to distinguish the search section */
-}
-
-.search-results {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.result-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    margin: 20px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.result-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.result-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #002366;
-}
-
-.result-card p {
-    font-size: 16px;
-    margin: 0 15px 10px;
-    color: #666;
-}
-
-.result-card .price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #28a745;
-    margin-bottom: 15px;
-}
+    
+    .address-section {
+        padding: 50px 20px;  /* Add padding around the content */
+        background-color: #f9f9f9;  /* Light background for contrast */
+        text-align: center;  /* Center-align the content */
+    }
+    
+    .address-section h2 {
+        font-size: 36px;  /* Set a large font size for the section heading */
+        color: #002366;  /* Use Royal Blue for consistent styling */
+        margin-bottom: 40px;  /* Add space below the heading */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Add a subtle shadow to the text */
+    }
+    
+    .contact h2 {
+        font-size: 36px;  /* Increase the font size for the contact section heading */
+        color: #002366;  /* Use Royal Blue to match the address section */
+        margin-bottom: 20px;  /* Add space below the heading */
+        text-align: center;  /* Center-align the heading */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Add subtle shadow for a more polished look */
+    }
+    
+    .locations {
+        display: flex;  /* Use flexbox to arrange location cards */
+        justify-content: space-around;  /* Distribute location cards evenly */
+        flex-wrap: wrap;  /* Allow location cards to wrap on smaller screens */
+    }
+    
+    .location {
+        background-color: white;  /* Set a white background for the location card */
+        padding: 20px;  /* Add padding inside the card */
+        border-radius: 8px;  /* Round the corners of the card */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+        max-width: 300px;  /* Limit the width of the location card */
+        margin: 10px;  /* Add margin around each card for spacing */
+        text-align: left;  /* Align text to the left within the card */
+    }
+    
+    .location h3 {
+        font-size: 24px;  /* Set a medium font size for the location name */
+        color: #333;  /* Use dark grey for the heading */
+        margin-bottom: 10px;  /* Add space below the heading */
+    }
+    
+    .location p {
+        font-size: 16px;  /* Set a standard font size for location details */
+        color: #666;  /* Use light grey for the text */
+    }
+    
+    .search-section {
+        padding: 20px 0;  /* Add padding above and below the search section */
+        text-align: center;  /* Center the text in the search section */
+        background-color: #f1f1f1;  /* Light background to distinguish the search section */
+    }
+    
+    .search-results {
+        margin-top: 20px;  /* Add space above the search results */
+        display: flex;  /* Use flexbox to arrange result cards */
+        justify-content: center;  /* Center the result cards */
+        flex-wrap: wrap;  /* Allow result cards to wrap on smaller screens */
+        padding: 20px;  /* Add padding inside the search results container */
+    }
+    
+    .result-card {
+        background-color: white;  /* Set a white background for the result card */
+        border-radius: 8px;  /* Round the corners of the result card */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+        width: 250px;  /* Set a fixed width for consistency */
+        margin: 20px;  /* Add margin around each card for spacing */
+        text-align: center;  /* Center-align the text inside the card */
+        overflow: hidden;  /* Hide overflowing content */
+    }
+    
+    .result-card img {
+        width: 100%;  /* Make the image fill the card width */
+        height: 150px;  /* Set a fixed height for the image */
+        object-fit: cover;  /* Ensure the image covers the entire area without distortion */
+    }
+    
+    .result-card h3 {
+        font-size: 20px;  /* Set a medium font size for the result heading */
+        margin: 10px 0;  /* Add vertical spacing around the heading */
+        color: #002366;  /* Use Royal Blue for the heading color */
+    }
+    
+    .result-card p {
+        font-size: 16px;  /* Set a standard font size for the card details */
+        margin: 0 15px 10px;  /* Add horizontal and vertical margins for spacing */
+        color: #666;  /* Use light grey for the text */
+    }
+    
+    .result-card .price {
+        font-size: 18px;  /* Set a larger font size for the price */
+        font-weight: bold;  /* Make the price text bold */
+        color: #28a745;  /* Use green for the price to stand out */
+        margin-bottom: 15px;  /* Add space below the price */
+    }
+}    
