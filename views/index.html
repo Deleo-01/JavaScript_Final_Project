@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+   <nav>
+    <div class="nav-content">
+        <img src="images/logo.png" alt="TravelBloom Logo" class="logo-image">
+        <div class="logo">TravelBloom</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button onclick="searchLocation()">Search</button>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+     <!-- Home Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Explore Dream Destination</h1>
+        <p>Discover the best places tailored to your preferences.</p>
+        <button>Book Now</button>
+    </div>
+<div class="social-media-sidebar">
+    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube_icon.png" alt="YouTube" class="social-icon"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_iconh.png" alt="Facebook" class="social-icon"></a>
+    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter_logo.png" alt="Twitter" class="social-icon"></a>
+</div>
+
+</section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <h1>About Us</h1>
+    <div class="about-card">
+        <ul>
+            <li><strong>Your Experience, Our Priority:</strong> At TravelBloom, your happiness is our top priority. We tailor each travel experience to your unique preferences, ensuring that every detail is perfect for your dream getaway.</li>
+            <li><strong>Making Travel Affordable and Enjoyable:</strong> We strive to offer the best travel deals without compromising on quality. Our partnerships with top airlines, hotels, and tour operators allow us to pass on savings to you, ensuring value for every dollar spent.</li>
+            <li><strong>Bringing the World to Your Fingertips:</strong> Whether you're a solo adventurer, a family looking for fun, or a business traveler, we have something for everyone.</li>
+            <li><strong>Trust and Reliability:</strong> You can count on us. We ensure every detail of your trip is handled with care.</li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Contact Us Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+    <!-- Locations Section -->
+<section class="address-section">
+    <h2>Our Locations</h2>
+    <div class="locations">
+        <div class="location">
+            <h3>New York Office</h3>
+            <p>123 Fifth Avenue, New York, NY 10001, USA</p>
+        </div>
+        <div class="location">
+            <h3>Toronto Office</h3>
+            <p>456 Queen Street, Toronto, ON M5V 2B6, Canada</p>
+        </div>
+        <div class="location">
+            <h3>London Office</h3>
+            <p>789 King's Road, London SW10 0LR, UK</p>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

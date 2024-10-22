@@ -1,0 +1,384 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px; /* Smaller size for the logo */
+    margin-right: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the links */
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-left: 40px; /* Adds space between links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligns the search bar to the right */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 250px; /* Set a fixed width for consistency */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: teal;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: darkcyan;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("images/pic.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.hero-content {
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 15px;
+    color: #002366;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 25px;
+    color: #011421;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: darkcyan;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-image: url("images/about_pic.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.about h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.about-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-card li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Social Media Sidebar */
+.social-media-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.social-media-sidebar a {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form label,
+.contact form input,
+.contact form textarea {
+    margin-bottom: 10px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about-card {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .social-media-sidebar {
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        transform: none;
+        flex-direction: row;
+    }
+
+    .social-media-sidebar a {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
+
+
+.address-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.address-section h2 {
+    font-size: 36px;
+    color: #002366; /* Royal Blue for consistency */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.contact h2 {
+    font-size: 36px; /* Increase the font size */
+    color: #002366; /* Royal Blue color for consistency */
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for a more polished look */
+}
+
+
+.locations {
+    display: flex;
+    justify-content: space-around; /* Distribute locations evenly */
+    flex-wrap: wrap;
+}
+
+.location {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.location h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 16px;
+    color: #666;
+}
+
+.search-section {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f1f1f1; /* Light background to distinguish the search section */
+}
+
+.search-results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.result-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.result-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #002366;
+}
+
+.result-card p {
+    font-size: 16px;
+    margin: 0 15px 10px;
+    color: #666;
+}
+
+.result-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
